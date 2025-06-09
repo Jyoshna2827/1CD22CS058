@@ -7,5 +7,7 @@ pipeline{
     stage("Build")
     {
       steps{
-        bat 'mvn clean install'}}
+       dir('prog6') {
+            bat 'mvn clean install'
+        }}
   }}
